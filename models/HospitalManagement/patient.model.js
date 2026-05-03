@@ -28,7 +28,10 @@ const patientSchema = new mongoose.Schema(
             enum: ["M", "F", "O"],
             required: true  
          },
-         
+         admittedIn:{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:"Hospital"
+         }
 
     },
     {}
